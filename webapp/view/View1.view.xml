@@ -1,0 +1,60 @@
+<mvc:View
+	controllerName="com.acn.training.project2.controller.View1"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+	<VBox id="VBox" class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormToolbar"
+            editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false"
+			ariaLabelledBy="Title1" >
+			<f:content>
+				<Label id="_IDGenLabel" text="Name" />
+				<Input id="_IDGenInput" value="{SupplierName}" />
+				<Label id="_IDGenLabel1" text="Street/No." />
+				<Input id="_IDGenInput1" value="{Street}">
+				</Input>
+				<Input id="_IDGenInput2" value="{HouseNumber}">
+					<layoutData>
+						<l:GridData id="_IDGenGridData" span="XL2 L1 M3 S4" />
+					</layoutData>
+				</Input>
+				<Label id="_IDGenLabel2" text="ZIP Code/City" />
+				<Input id="_IDGenInput3" value="{ZIPCode}">
+					<layoutData>
+						<l:GridData id="_IDGenGridData1" span="XL2 L1 M3 S4" />
+					</layoutData>
+				</Input>
+				<Input id="_IDGenInput4" value="{City}" />
+				<Label id="_IDGenLabel3" text="Country" />
+				<Select id="country" selectedKey="{Country}">
+					<items>
+						<core:Item id="_IDGenItem" text="England" key="England"/>
+						<core:Item id="_IDGenItem1" text="Germany" key="Germany"/>
+						<core:Item id="_IDGenItem2" text="USA" key="USA"/>
+                        <core:Item id="_IDGenItem3" text="Philippines" key="USA"/>
+					</items>
+				</Select>
+                <HBox id="_IDGenHBox1" justifyContent="End" class="sapUiSmallMarginTop">
+                <Button id="_IDGenButton" text="Save"  type="Accept" press="onSave"/>
+                <Button id="_IDGenButton1" text="Clear" type="Reject" press="onClearInputs" class="sapUiTinyMarginBegin"/>
+                </HBox>
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+</mvc:View>
