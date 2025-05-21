@@ -1,0 +1,15 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.acn.training.project1.controller.View1">
+    <Page id="page" title="{i18n>title}">
+    <content>
+        <Label text="First Name" width="100%" id="label0"/>
+    </content>
+    <footer>
+        <Toolbar width="100%" id="toolbar1">
+            <content>
+                <ToolbarSpacer id="spacer0"/>
+                <Button xmlns="sap.m" text="Save" id="button0" activeIcon="sap-icon://save" icon="sap-icon://save"/>
+            </content>
+        </Toolbar>
+    </footer>
+    </Page>
+</mvc:View>
